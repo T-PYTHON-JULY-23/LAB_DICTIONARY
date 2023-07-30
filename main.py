@@ -12,14 +12,18 @@ else:
     print('Sorry, the number is not found')
 print('-------Q2-------')
 myList = [5, 0, 34, 9, 0, 13, 8]
-newList=[]
-count =0
-for value in myList:
-    if value != 0:
-        newList.append(value)
-    else:
-        count=count+1
-while count !=0:
-    newList.append(0)
-    count =count-1
-print(newList)
+def rearrangesList(list):
+    newList=[]
+    count =0
+    for value in list:
+        if value != 0:
+            newList.append(value)
+        else:
+            count=count+1
+    while count !=0:
+        newList.append(0)
+        count =count-1
+    list=[]
+    list.extend(newList)
+    return list
+print(rearrangesList(myList))

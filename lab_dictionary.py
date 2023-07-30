@@ -21,4 +21,34 @@ def  phone_book_program():
         print("this is invalid number")
     return 
 
+
+
+
 phone_book_program()
+
+
+
+##Q2:Write a function that receives a list containing the following numbers : 
+
+
+def rearrange_list(num_list): 
+    k= 0
+    for i in num_list:  
+        if i:  
+            num_list[k] = i  
+            k = k + 1  
+    for i in range(k, len(num_list)):  
+        num_list[i] = 0
+
+
+    return num_list  
+
+num_list = [5, 0, 34, 9, 0, 13, 8] 
+order_list = rearrange_list(num_list)  
+print(order_list)
+
+
+
+
+
+
